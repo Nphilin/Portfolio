@@ -1,0 +1,168 @@
+/* Resumo de Estilo Minimalista */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: gainsboro;
+    color: black;
+    padding: 0;
+    line-height: 1.4;
+    width: 100%;
+}
+
+/* Navegação */
+nav {
+    padding: 50px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    background-color: #1b123201;
+    color: black;
+    font-size: x-large;
+    border-radius: 10px;
+
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    margin-left: 30px;
+    font-size: 0.9rem;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9, 137, 188, 0.358), rgba(49, 69, 77, 0.358)), url('../image/back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10%;
+    border-radius: 10px;
+    border-bottom: 2px solid black;
+    /*border-top: 2px solid black;*/
+
+
+}
+
+p {
+    text-transform: uppercase;
+    text-shadow:
+        1px 1px 0px rgba(255, 255, 255, 0.5),
+        2px 2px 0px rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    max-width: 900px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow:
+        1px 1px 0px rgba(255, 255, 255, 0.5),
+        2px 2px 0px rgba(255, 255, 255, 0.4),
+        3px 3px 0px rgba(255, 255, 255, 0.3),
+        4px 4px 0px rgba(255, 255, 255, 0.2);
+
+}
+
+.subtitle {
+    margin-top: 20px;
+    color: var(--gray);
+    font-size: 1.2rem;
+}
+
+/* Seções */
+.section {
+    padding: 80px;
+    border-top: 1px solid var(--border);
+}
+
+.label {
+    font-size: 0.8rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.project-item {
+    display: flex;
+    padding: 30px;
+    border-bottom: 1px solid var(--border);
+    transition: opacity 0.3s;
+}
+
+.project-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.year {
+    width: 150px;
+    color: var(--gray);
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about-text {
+    font-size: 2rem;
+    max-width: 800px;
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    border-top: 1px solid var(--border);
+}
+
+.email-link {
+    font-size: 15px;
+    color: blue;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-text {
+        font-size: 1.5rem;
+    }
+
+    .email-link {
+        font-size: 1.5rem;
+    }
+}

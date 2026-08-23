@@ -1,0 +1,75 @@
+/* Configuração global e container */
+.portfolio-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Courier New', Courier, monospace; /* Fonte estilo terminal */
+  color: #09a5de85;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header .title a {
+  color: #09a5de85; /* Verde estilo terminal */
+  text-decoration: none;
+  font-size: 2rem;
+} 
+
+.subtitle {
+  color: #a0a0a0;
+  margin-top: -0.5rem;
+}
+
+/* Navegação */
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+}
+
+.nav a:hover {
+  border-color: #00ff66;
+  color: #00ff66;
+}
+
+.nav a.active {
+  background-color: #00ff66;
+  color: #121212;
+}
+
+/* Divisores */
+.divider {
+  border: 0;
+  border-top: 1px dashed #444;
+  margin: 2rem 0;
+}
+
+/* Conteúdo */
+.content {
+  line-height: 1.6;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

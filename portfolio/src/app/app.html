@@ -1,0 +1,31 @@
+<div class="portfolio-container">
+  <app-navbar>  </app-navbar>
+  <!-- Cabeçalho / Navbar -->
+  <header class="header">
+    <h1 class="title"><a routerLink="/home">José Pedro Luna</a></h1>
+    <p class="subtitle">Desenvolvedor Fullstack / Estudante ADS</p>
+    
+   
+  </header>
+
+  <hr class="divider" />
+
+  <!-- Conteúdo dinâmico das páginas -->
+  <main class="content">
+    <app-sobre></app-sobre>
+    <app-projetos></app-projetos>
+    <app-estudos></app-estudos>
+    <router-outlet></router-outlet>
+  </main>
+
+  <hr class="divider" />
+
+  <!-- Rodapé com redes sociais -->
+  <footer class="footer">
+    <p>© 2026 - Desenvolvido com Angular</p>
+    <div class="social-links">
+      <a href="https://github.com/seugithub" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/seulinkedin" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+</div>

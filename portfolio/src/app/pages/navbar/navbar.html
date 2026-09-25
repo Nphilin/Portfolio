@@ -1,12 +1,36 @@
 <header class="navbar-container">
   <nav class="navbar">
-    <img src="LOGO JL.png" alt="Logo JL" class="logo" width="130" />
+    <a routerLink="/home" class="logo-link" (click)="closeMenu()">
+      <img src="/logo.png" alt="Logo José Pedro Luna" class="logo" width="44" height="44" />
+      <span class="logo-text">José Pedro Luna</span>
+    </a>
 
-    <ul class="nav-links">
-      <li><a routerLink="/home" routerLinkActive="active-link">Início</a></li>
-      <li><a routerLink="/sobre" routerLinkActive="active-link">sobre</a></li>
-      <li><a routerLink="/projetos" routerLinkActive="active-link">Projetos</a></li>
-      <li><a routerLink="/estudos" routerLinkActive="active-link">Estudos</a></li>
+    <button
+      type="button"
+      class="menu-toggle"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="isMenuOpen()"
+      aria-controls="menu-principal"
+      aria-label="Abrir menu de navegação"
+    >
+      <i class="fa-solid" [class.fa-bars]="!isMenuOpen()" [class.fa-xmark]="isMenuOpen()"></i>
+    </button>
+
+    <ul id="menu-principal" class="nav-links" [class.open]="isMenuOpen()">
+      <li>
+        <a routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">Início</a>
+      </li>
+      <li>
+        <a routerLink="/sobre" routerLinkActive="active-link" (click)="closeMenu()">Sobre</a>
+      </li>
+      <li>
+        <a routerLink="/projetos" routerLinkActive="active-link" (click)="closeMenu()"
+          >Projetos</a
+        >
+      </li>
+      <li>
+        <a routerLink="/estudos" routerLinkActive="active-link" (click)="closeMenu()">Estudos</a>
+      </li>
     </ul>
   </nav>
 </header>

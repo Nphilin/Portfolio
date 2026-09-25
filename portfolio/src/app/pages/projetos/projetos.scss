@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   .titulo-secao {
-    color: #ffffff;
+    color: var(--color-text);
     font-size: 1.8rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -15,7 +15,7 @@
       display: block;
       width: 50px;
       height: 3px;
-      background: #5b63d3;
+      background: var(--color-primary);
       margin: 8px auto 0;
       border-radius: 2px;
     }
@@ -28,8 +28,8 @@
   }
 
   .card-projeto {
-    background-color: #0b0e17;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
     border-radius: 12px;
     padding: 1.5rem;
     display: flex;
@@ -39,8 +39,8 @@
 
     &:hover {
       transform: translateY(-5px);
-      border-color: #5b63d3;
-      box-shadow: 0 8px 24px rgba(91, 99, 211, 0.15);
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-primary-glow);
     }
 
     .card-header {
@@ -51,7 +51,7 @@
       margin-bottom: 0.8rem;
 
       .card-titulo {
-        color: #f1f5f9;
+        color: var(--color-text);
         font-size: 1.15rem;
         font-weight: 600;
         margin: 0;
@@ -61,21 +61,21 @@
         font-size: 0.7rem;
         padding: 0.25rem 0.5rem;
         border-radius: 6px;
-        background-color: #1a202c;
-        color: #94a3b8;
+        background-color: var(--color-bg-elevated-hover);
+        color: var(--color-text-muted);
         white-space: nowrap;
         font-weight: 500;
 
         &.co-participante {
-          background-color: rgba(91, 99, 211, 0.2);
-          color: #818cf8;
-          border: 1px solid rgba(91, 99, 211, 0.5);
+          background-color: var(--color-primary-soft);
+          color: var(--color-primary-light);
+          border: 1px solid var(--color-primary-border);
         }
       }
     }
 
     .card-descricao {
-      color: #94a3b8;
+      color: var(--color-text-muted);
       font-size: 0.9rem;
       line-height: 1.5;
       margin-bottom: 1.2rem;
@@ -89,21 +89,21 @@
       margin-bottom: 1.5rem;
 
       .tech-tag {
-        background-color: rgba(255, 255, 255, 0.05);
-        color: #38bdf8;
+        background-color: var(--color-bg-elevated-hover);
+        color: var(--color-info);
         font-size: 0.75rem;
         padding: 0.25rem 0.6rem;
         border-radius: 4px;
-        border: 1px solid rgba(56, 189, 248, 0.2);
+        border: 1px solid var(--color-info-soft);
       }
     }
 
     .card-footer {
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-top: 1px solid var(--color-border);
       padding-top: 1rem;
 
       .btn-github {
-        color: #60a5fa;
+        color: var(--color-info);
         text-decoration: none;
         font-size: 0.875rem;
         font-weight: 500;
@@ -113,7 +113,7 @@
         transition: color 0.2s ease;
 
         &:hover {
-          color: #93c5fd;
+          color: var(--color-primary-light);
           text-decoration: underline;
         }
       }

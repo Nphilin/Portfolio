@@ -1,18 +1,8 @@
 <div class="portfolio-container">
-  <app-navbar>  </app-navbar>
-  <!-- Cabeçalho / Navbar -->
-  <header class="header">
-    <h1 class="title"><a routerLink="/home">José Pedro Luna</a></h1>
-    <p class="subtitle">Desenvolvedor Fullstack / Estudante ADS</p>
-    
-   
-  </header>
-
-  <hr class="divider" />
+  <app-navbar></app-navbar>
 
   <!-- Conteúdo dinâmico das páginas -->
   <main class="content">
-
     <router-outlet></router-outlet>
   </main>
 
@@ -20,10 +10,18 @@
 
   <!-- Rodapé com redes sociais -->
   <footer class="footer">
-    <p>© 2026 - Desenvolvido com Angular</p>
+    <p>&copy; 2026 José Pedro Luna &middot; Desenvolvido com Angular</p>
     <div class="social-links">
-      <a href="https://github.com/seugithub" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/seulinkedin" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Nphilin" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+      </a>
+      <a
+        href="https://linkedin.com/in/josé-pedro-b561ab185"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+      </a>
     </div>
   </footer>
 </div>

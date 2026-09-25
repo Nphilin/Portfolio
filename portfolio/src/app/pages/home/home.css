@@ -1,0 +1,185 @@
+/* Container Principal */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Grid do Hero */
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Textos e Badges */
+.badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: rgba(100, 108, 255, 0.1);
+  color: #646cff;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.highlight {
+  color: #646cff;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  color: #a1a1aa;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #d4d4d8;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 540px;
+}
+
+/* Botões */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #646cff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid #3f3f46;
+  color: #fff;
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  border-color: #646cff;
+  color: #646cff;
+  transform: translateY(-2px);
+}
+
+/* Ícones Sociais */
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.social-links a {
+  color: #a1a1aa;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #646cff;
+}
+
+/* Foto com efeito simples */
+.avatar-wrapper {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #646cff;
+  box-shadow: 0 0 25px rgba(100, 108, 255, 0.2);
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Seção Tech Stack */
+.tech-stack {
+  border-top: 1px solid #27272a;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.tech-stack p {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: #d4d4d8;
+  font-weight: 500;
+}
+
+.tech-icons span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.tech-icons i {
+  color: #646cff;
+  font-size: 1.4rem;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

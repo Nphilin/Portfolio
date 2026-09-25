@@ -1,1 +1,70 @@
-<p>estudos works!</p>
+<section class="estudos-container">
+  <!-- Parte 1: Formação Acadêmica UNIBRA -->
+  <div class="secao-bloco">
+    <h2 class="titulo-secao">Formação Acadêmica (ADS - UNIBRA)</h2>
+    <p class="subtitulo-secao">
+      Acompanhamento da matriz curricular do curso de Análise e Desenvolvimento de Sistemas.
+    </p>
+
+    <div class="periodos-grid">
+      @for (p of periodosAcademicos; track p.periodo) {
+        <div class="card-periodo" [class.em-andamento]="p.status === 'Em Andamento'">
+          <div class="card-header-periodo">
+            <h3>{{ p.periodo }}</h3>
+            <span class="badge-status" [class.concluido]="p.status === 'Concluído'">
+              {{ p.status }}
+            </span>
+          </div>
+
+          <ul class="lista-cadeiras">
+            @for (cadeira of p.cadeiras; track cadeira.nome) {
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icone-check"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>{{ cadeira.nome }}</span>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Parte 2: Casos de Estudo e Especializações -->
+  <div class="secao-bloco mt-5">
+    <h2 class="titulo-secao">Casos de Estudo & Focos de Aprendizado</h2>
+    <p class="subtitulo-secao">
+      Tecnologias, frameworks e áreas de interesse para desenvolvimento contínuo.
+    </p>
+
+    <div class="casos-grid">
+      @for (caso of casosEstudo; track caso.tecnologia) {
+        <div class="card-caso" [class.foco-atual]="caso.status === 'Em Foco'">
+          <div class="caso-header">
+            <div>
+              <h3>{{ caso.tecnologia }}</h3>
+              <span class="categoria">{{ caso.categoria }}</span>
+            </div>
+            <span class="badge-foco" [class.futuro]="caso.status === 'Futuro Objetivo'">
+              {{ caso.status }}
+            </span>
+          </div>
+          <p class="descricao-caso">{{ caso.descricao }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

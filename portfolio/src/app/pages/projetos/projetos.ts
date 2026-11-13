@@ -12,6 +12,14 @@ import { Projeto } from '../../models/projeto.models';
 export class Projetos {
   projetos: Projeto[] = [
     {
+      titulo: 'Automação de Relatório com n8n e IA',
+      descricao:
+        'Workflow que lê uma planilha de vendas, usa IA (Gemini) para analisar os dados e envia um relatório semanal por e-mail, com tratamento de erros e aviso de falhas.',
+      tecnologias: ['n8n', 'Docker', 'Google Gemini', 'Google Sheets', 'JavaScript'],
+      linkGithub: 'https://github.com/Nphilin/automacao-relatorio-n8n',
+      papel: 'Desenvolvedor Principal',
+    },
+    {
       titulo: 'Projeto Casa de Mainha',
       descricao: 'Serviço de gerenciamento do hotel Casa de Mainha.',
       tecnologias: ['Java', 'Spring Boot'],
